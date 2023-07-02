@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --red: #ff0000;
+    --border: 1px solid rgba(0, 0, 0, 0.1);
+    --transition: .3s all ease;
+    --black: #171D22;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/* header */
+#header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--black);
+    padding: 0 80px;
+}
+
+/* logo */
+#header #logo {
+    color: #fff;
+    font-size: 3rem;
+}
+
+/* menu */
+#header .navbar {
+    display: flex;
+    align-items: center;
+}
+#header .navbar ul {
+    display: flex;
+}
+#header .navbar li {
+    display: inline-block;
+}
+#header .navbar li a {
+    color: #fff;
+    padding: 0 15px;
+}
+#header .navbar li a:hover {
+    color: var(--red);
+    transition: var(--transition);
+}
+
+/* form */
+#header .form {
+    display: flex;
+    align-items: center;
+}
+#header .form a {
+    color: #fff;
+}
+#header .form i {
+    color: #fff;
+    padding-left: 15px;
+    cursor: pointer;
+}
+#header .form a:hover {
+    color: var(--red);
+    transition: var(--transition);
+}
+#header .form .form__search i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ddd;
+}
+
