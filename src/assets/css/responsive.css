@@ -1,0 +1,10 @@
+@media (max-width: 1095px) {
+    #header {
+        padding: 10px 30px;
+    }
+}
+@media (max-width: 991px) {
+    #header {
+        padding: 10px 20px;
+    }
+}
